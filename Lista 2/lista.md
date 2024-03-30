@@ -14,6 +14,7 @@
 9. **Cite uma desvantagem do escalonador preemptivo e uma desvantagem do escalonador não-preemptivo.**
 10. **Cite parâmetros que devem ser levados em conta na determinação do quantum de um escalonador Round-Robin.**
 11. **Considere o conjunto de 6 processos e respectivos tempos de execução (quantum = 8ms). A ordem de chegada dos processos foi A->B->C->D->E->F (do mais antigo para o mais recente). No momento de início da execução do algoritmo de escalonamento, todos os 6 processos estão prontos. Diga a ordem na qual este conjunto de processos será executado se considerarmos as políticas de escalonamento Round-Robin e Shortest Job First. Forneça também o diagrama de Gantt, o tempo de *turnaround* de cada processo e o tempo médio de *turnaround*.**
+
 | Processos | Tempo de resposta (ms) |
 |-----------|------------------------|
 | A         | 9                      |
