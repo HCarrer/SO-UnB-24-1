@@ -21,6 +21,7 @@
 
 **Resolução**
 Iniciando-se com o processo P1, temos a seguinte sequência de eventos:
+```
 Linha executada em P0 | Linha executada em P1 |
                       |          3            | `flag[1]` = TRUE
                       |          4            | entra no loop -> `turn` == 0 e `i` == 1
@@ -32,5 +33,6 @@ Linha executada em P0 | Linha executada em P1 |
          -            |                       | quantum na seção crítica
                       |         7             | `turn` = 1
                       |         9             | *entra na seção crítica*
+```
 
 Como os dois processos entraram na seção crítica ao mesmo tempo nesta situação, isto fere o princípio da exclusão mútua, não garantindo-a assim sempre.
