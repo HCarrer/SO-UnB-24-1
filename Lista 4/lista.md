@@ -23,14 +23,15 @@ Cada processo tem a sua vez de entrar na seção crítica, onde é controlado pe
 6. **Cite um argumento contra a implementação da exclusão mútua por bloqueio de processos.**
 É necessário chamada no sistema para exclusão mútua e aumenta o potencial da troca de contexto, gerando overhead.
 
-7. **Cite uma utilização de semáforos generalizados.**
-Decrementa o valor `semáforo` se for maior ou igual a zero. Se for menor, o processo é bloqueado. Podemos contar o número de processos também, de acordo com o semáfoto (tem slide falando sobre isso).
+7. **Cite uma utilização de semáforos generalizados.** 
+Com semáforos generalizados, como é possível que se assumam valores negativos, o semáforo sempre é decrementado, tornando possível que se tenha controle de quantos processos estão bloqueados. Em semáforos normais, ao se truncar em zero o semáforo, não sabemos quantos processos estão bloqueados.
 
 8. **O que são variáveis de condição e como elas são utilizadas.**
-Variáveis de condição indicam quando um processo vai entrar na seção crítica, sendo utilizada para realizar esse controle. `wait` (var) e `signal` (var).
+Variáveis de condição são variáveis utilizadas para ordenar a execução de diferentes processos. São duas as utilizações possíveis: `wait(var)`, usada para bloquear o processo em var e `signal(var)`, usada para acordar os processos bloqueados em var.
 
 9. **Cite uma vantagem e uma desvantagem das primitivas não-bloqueadas de troca de mensagens.**
 Vantagem: avançar mais rápido na execução.
 Desvantagem: aumenta a complexidade do programa.
 
-10. **Considere o problema do produtor-consumidor com um buffer de tamanho infinito. Neste caso, precisamos ainda controlar o número de mensagens no buffer? Por quê?**
+10. **Considere o problema do produtor-consumidor com um buffer de tamanho infinito. Neste caso, precisamos ainda controlar o número de mensagens no buffer? Por quê?** 
+Precisamos controlar o número mínimo somente, para o processo consumidor não retirar dados do buffer vazio. Já como numero máximo não precisamos nos preocupar uma vez que nunca se atingirá o limite.
