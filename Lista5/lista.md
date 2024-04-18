@@ -10,7 +10,7 @@
 
 3. **Qual a maior diferença entre deadlock e starvation?**<br/>
 
-4. **No modelo que considera os estados inseguros para a prevenção de deadlocks, todas as trajetórias são horizontais ou vericais, da esquerda para a direita. Exemplifique quando podemos obter trajetórias diagonais e trajetórias da direita para a esquerda.**<br/>
+4. **No modelo que considera os estados inseguros para a prevenção de deadlocks, todas as trajetórias são horizontais ou vericais, da esquerda para a direita. Exemplifique quando podemos obter trajetórias diagonais e trajetórias da direita para a esquerda.** <br/>
 ![Ilustração 2](4.png)
 
 5. **Um sistema pode estar em um estado que não seja nem um deadlock e nem um estado seguro? O que significa este estado?**<br/>
