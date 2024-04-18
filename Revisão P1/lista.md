@@ -7,6 +7,7 @@
 Vetor de interrupções é um vetor contendo os endereços de memória das rotinas de tratamento de interrupção de cada classe do sistema. Quando uma interrupção ocorre em um processo, o SO captura o erro X e acessa o vetor de interrupções na posição X, obtendo assim o endereço da rotina de tratamento da interrupção obtida. Após isso o sistema lê este endereço e executa a rotina presente naquele endereço.
 
 2. **Considere os processos abaixo**
+
 | Processos | Tempo de execução |
 |-----------|-------------------|
 | P1        | 2                 |
