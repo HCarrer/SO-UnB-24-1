@@ -45,10 +45,10 @@ Tempo médio da troca de contexto do tempo de resposta desejado.
 | E         | 18                     |
 | F         | 3                      |
 
-Resolução
+Resolução<br/>
 
 **Round-Robin**
-
+```
     8                 1
 A |--|              |--|
        8            |  | 8     4
@@ -70,10 +70,11 @@ Tn(E) = 8 + 8 + 2 + 6 + 8 + 3 + 1 + 8 + 8 + 4 + 2 = 58ms
 Tn(F) = 8 + 8 + 2 + 6 + 8 + 3 = 35ms
 
 Tn(médio) = ( Tn(A) + Tn(B) + Tn(C) + Tn(D) + Tn(E) + Tn(F) ) / 6 = 37,8333...
-
+```
 
 
 **Shortest Job First**
+```
              9
 A          |--|
            |  |   20
@@ -95,3 +96,4 @@ Tn(E) = 2 + 3 + 6 + 9 + 18 = 38
 Tn(F) = 2 + 3 + = 5
 
 Tn(médio) = ( Tn(A) + Tn(B) + Tn(C) + Tn(D) + Tn(E) + Tn(F) ) / 6 = 22,333...
+```

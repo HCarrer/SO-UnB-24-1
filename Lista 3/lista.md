@@ -19,7 +19,7 @@
 12 | }
 ```
 
-**Resolução**
+**Resolução**<br/>
 Iniciando-se com o processo P1, temos a seguinte sequência de eventos:
 ```
 Linha executada em P0 | Linha executada em P1 |

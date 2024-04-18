@@ -18,6 +18,7 @@ Vetor de interrupções é um vetor contendo os endereços de memória das rotin
 **A ordem de chegada dos processos no sistema é P1, P2, P3, P4 e P5 (do mais antigo para o mais recente). No instante 0, todos os processos estão no estado ready. Admita que o tempo de salvamento de contexto é 1, o tempo de restauração de contexto é 1 e o quantum é 5. Forneça a ordem de execução dos processos e o diagrama de Gantt. Determine o tempo de turnaround de cada processo bem como o tempo médio de turnaround para o Round-Robin e o First Come First Served.**<br/>
 
 **Round Robin**
+```
       1   2
 P1  |---|---|
             | 1   5   1                                   1   5   1                   1   4 
@@ -38,8 +39,10 @@ Tn(P5) = 1 + 2 + 1 + 5 + 1 + 1 + 5 + 1 + 1 + 1 + 1 + 5 + 1 + 1 + 5 + 1 + 1 + 5 +
 Tn(médio) = ( Tn(P1) + Tn(P2) + Tn(P3) + Tn(P4) + Tn(P5) ) / 5 = 29,6
 
 Ordem = P1 -> P2 -> P3 -> P4 -> P5 -> P2 -> P3 -> P5 -> P2
+```
 
 **First Come First Served**
+```
       1   2
 P1  |---|---|
             | 1   14
@@ -60,7 +63,7 @@ Tn(P5) = 1 + 2 + 1 + 14 + 1 + 10 + 1 + 1 + 1 + 6 = 38
 Tn(médio) = ( Tn(P1) + Tn(P2) + Tn(P3) + Tn(P4) + Tn(P5) ) / 5 = 23,8
 
 Ordem = P1 -> P2 -> P3 -> P4 -> P5
-
+```
 
 3. **Mostre que a exclusão mútua não é garantida se a primitiva P(sem) (ou Down(sem)) não for implementada de maneira atômica**<br/>
 
@@ -113,8 +116,8 @@ Espera circular: deve existir um ciclo de processos onde cada processo está esp
 
 **Extra: Suponha que os processos P1, P3 e P5 do exercício 2 possuem prioridade 1 e os processos P2 e P4 possuem prioridade 2. Forneça a ordem de execução dos processos e o diagrama de Gantt. Determine o tempo de turnaround de cada processo bem como o tempo médio de turnaround para ambas as filas de prioridade utilizando o método Round-Robin.**
 
-Prioridade 1
-
+**Prioridade 1**
+```
       1   2
 P1  |---|---|
             | 1   5   1               1   5
@@ -125,9 +128,10 @@ P5                      |---|---|---|       |---|---|
 Tn(P1) = 1 + 2 = 3
 Tn(P3) = 1 + 2 + 1 + 5 + 1 + 1 + 5 + 1 + 1 + 5 = 23
 Tn(P5) = 1 + 2 + 1 + 5 + 1 + 1 + 5 + 1 + 1 + 5 + 1 + 1 = 25
+```
 
-Prioridade 2
-
+**Prioridade 2**
+```
      Tn(P5)  1   5   1           1   5   1   1   4
 P2  |------|---|---|---|       |---|---|---|---|---|
                        | 1   1 |
@@ -139,3 +143,4 @@ Tn(P4) = Tn(P5) + 1 + 5 + 1 + 1 + 1 = 34
 Tn(médio) = ( Tn(P1) + Tn(P2) + Tn(P3) + Tn(P4) + Tn(P5) ) / 5 = 26,2
 
 Ordem = P1 -> P3 -> P5 -> P3 -> P5 -> P2 -> P4 -> P2
+```
