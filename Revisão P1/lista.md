@@ -111,7 +111,40 @@ Não-preempção: cada recurso só pode ser liberado pelo processo que o detém
 Espera circular: deve existir um ciclo de processos onde cada processo está esperando por um recurso detido pelo próximo membro da cadeia
 
 **b) Diga quais condições necessárias para a ocorrência de deadlock estão presentes nesse exemplo. Justifique sua resposta.**<br/>
+Exclusão Mútua: Impressoa e scanner são recursos exclusivos
+Posse e espera: Os dois processos solicitam novos recursos sem liberar os outros
+Não preempção: Interromper impressora e scanner causam prejuizo da computação
+Espera circular:
 
+```
+Seja:
+  ___
+/  X  \    => Processo X
+\_____/
+
+ _____
+|  Y  |    => Recurso Y
+|_____|
+
+```
+
+```
+       ___                 _____
+     /  P1 \   <--------  |  R1 |
+     \_____/              |_____|
+        \                    /\
+         \                   |
+          \    ______________|
+           \  /
+            \/_______________
+            /                | 
+           /                 |
+          /                  \/
+       ___                 _____
+     /  P2 \   <--------  |  R2 |
+     \_____/              |_____|
+
+```
 
 **---------------------------**<br/>
 
