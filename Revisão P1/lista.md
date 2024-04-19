@@ -105,15 +105,15 @@ Libera(R2);     |   Libera(R1);
 **Admita que R1=impressora e R2=scanner.**<br/>
 
 **a) Comente as condições necessárias para a ocorrência de deadlock.**<br/>
-Exclusão mútua: cada recurso deve ser alocado de maneira exclusiva
-Posse e espera: um processo que detem recursos pode solicitar novos recursos
-Não-preempção: cada recurso só pode ser liberado pelo processo que o detém
-Espera circular: deve existir um ciclo de processos onde cada processo está esperando por um recurso detido pelo próximo membro da cadeia
+Exclusão mútua: cada recurso deve ser alocado de maneira exclusiva<br/>
+Posse e espera: um processo que detem recursos pode solicitar novos recursos<br/>
+Não-preempção: cada recurso só pode ser liberado pelo processo que o detém<br/>
+Espera circular: deve existir um ciclo de processos onde cada processo está esperando por um recurso detido pelo próximo membro da cadeia<br/>
 
 **b) Diga quais condições necessárias para a ocorrência de deadlock estão presentes nesse exemplo. Justifique sua resposta.**<br/>
-Exclusão Mútua: Impressoa e scanner são recursos exclusivos
-Posse e espera: Os dois processos solicitam novos recursos sem liberar os outros
-Não preempção: Interromper impressora e scanner causam prejuizo da computação
+Exclusão Mútua: Impressoa e scanner são recursos exclusivos<br/>
+Posse e espera: Os dois processos solicitam novos recursos sem liberar os outros<br/>
+Não preempção: Interromper impressora e scanner causam prejuizo da computação<br/>
 Espera circular:
 
 ```
