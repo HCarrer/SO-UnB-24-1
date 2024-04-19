@@ -15,7 +15,7 @@ Para evitar que um processo tenha total controle sobre a alocação de recursos 
 Capacidade de um programa ser executado em diferentes hardwares e sistemas operacionais sem conflitos.
 
 5. **Explique o funcionamento do SPOOL (Simultaneous Peripheral Operation On-Line).**
-Divide a execução do programa em 2 etapas: ler e escrever em disco; ler o disco e executar a escrita no dispositivo.
+É uma técnica de gerenciamento de filas pare dispositivos de E/S(entrada e saída) que aumenta a eficiência do sistema, permitindo que operações periféricas sejam executadas simultaneamente com outras operações no computador. Como exemplo temos a leitura e escrita de discos
 
 6. **Cite 4 estruturações possíveis de um sistema operacional. Qual você acharia mais adequada a um ambiente distribuído?**
 Máquina virtual, monolito, camadas e micro-kernel. Máquina virtual!
