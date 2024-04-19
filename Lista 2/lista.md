@@ -28,7 +28,7 @@ Determinar qual processo pronto vai ser colocado em execução e por quanto temp
 Justiça, maximizar o throughput e minimizar o tempo de resposta.
 
 9. **Cite uma desvantagem do escalonador preemptivo e uma desvantagem do escalonador não-preemptivo.**
-Preemptivo: pode ocorrer perda de informaççoes cruciais durante a troca de contexto.
+Preemptivo: maior complexidade para programar, podendo gerar um overhead.
 Não-preemptivo: processos demorados podem acabar monopolizando o uso do processador caso não haja um comando especificando que a troca de contexto deve ocorrer.
 
 10. **Cite parâmetros que devem ser levados em conta na determinação do quantum de um escalonador Round-Robin.**
